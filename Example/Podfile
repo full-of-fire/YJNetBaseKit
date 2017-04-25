@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YJNetBaseKit_Example' do
+  pod 'YJNetBaseKit', :path => '../'
+
+  target 'YJNetBaseKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
