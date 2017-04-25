@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "YJBaseApi.h"
+#import "YJBaseNetManager.h"
+#import "YJGlobleNetworkConfig.h"
+#import "YJNetMonitorManger.h"
+#import "YJNetworkCofig.h"
+#import "YJNetworking.h"
+#import "YJURLResponse.h"
 
 FOUNDATION_EXPORT double YJNetBaseKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YJNetBaseKitVersionString[];

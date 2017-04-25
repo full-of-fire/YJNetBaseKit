@@ -7,12 +7,16 @@
 //
 
 #import "YJAppDelegate.h"
-
+#import <YJNetBaseKit/YJNetworking.h>
 @implementation YJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[YJNetMonitorManger sharedNetMonitorManager] start];
+    
+    
     return YES;
 }
 
