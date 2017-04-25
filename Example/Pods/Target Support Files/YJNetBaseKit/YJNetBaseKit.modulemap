@@ -1,0 +1,6 @@
+framework module YJNetBaseKit {
+  umbrella header "YJNetBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

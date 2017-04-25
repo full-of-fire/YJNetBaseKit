@@ -1,0 +1,16 @@
+PODS:
+  - YJNetBaseKit (0.1.0)
+
+DEPENDENCIES:
+  - YJNetBaseKit (from `../`)
+
+EXTERNAL SOURCES:
+  YJNetBaseKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YJNetBaseKit: f4fd3882a22bd24247e7a55abd23646d2f3f0e0a
+
+PODFILE CHECKSUM: 375ea381aae31a79afe13810810e5b3a773cba31
+
+COCOAPODS: 1.2.1
