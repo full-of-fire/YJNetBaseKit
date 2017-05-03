@@ -74,17 +74,17 @@ NSDictionary *RequestParams (NSDictionary*originParams) {
     
   
     
-    BOOL isReach = [[YJNetMonitorManger sharedNetMonitorManager] isReachable];
-
-    if (!isReach) {
-       
-       // 没有网咯
-        if (fail) {
-            YJURLResponse *response = [[YJURLResponse alloc] initWithError:nil Status:YJURLResponseStatusNoNetwork];
-            fail(response);
-        }
-        return @(0);
-    }
+//    BOOL isReach = [[YJNetMonitorManger sharedNetMonitorManager] isReachable];
+//
+//    if (!isReach) {
+//       
+//       // 没有网咯
+//        if (fail) {
+//            YJURLResponse *response = [[YJURLResponse alloc] initWithError:nil Status:YJURLResponseStatusNoNetwork];
+//            fail(response);
+//        }
+//        return @(0);
+//    }
 
     NSDictionary *requestParams = RequestParams(parameter);
     
@@ -127,16 +127,16 @@ NSDictionary *RequestParams (NSDictionary*originParams) {
 - (NSNumber*)netWorkPostWithURLString:(NSString*)urlString parameter:(NSDictionary*)parameter success:(YJCallBack)success fail:(YJCallBack)fail {
     
     
-    BOOL isReach = [[YJNetMonitorManger sharedNetMonitorManager] isReachable];
-    if (!isReach) {
-        
-        // 没有网咯
-        if (fail) {
-            YJURLResponse *response = [[YJURLResponse alloc] initWithError:nil Status:YJURLResponseStatusNoNetwork];
-            fail(response);
-        }
-        return @(0);
-    }
+//    BOOL isReach = [[YJNetMonitorManger sharedNetMonitorManager] isReachable];
+//    if (!isReach) {
+//        
+//        // 没有网咯
+//        if (fail) {
+//            YJURLResponse *response = [[YJURLResponse alloc] initWithError:nil Status:YJURLResponseStatusNoNetwork];
+//            fail(response);
+//        }
+//        return @(0);
+//    }
 
     NSDictionary *requestParams = RequestParams(parameter);
     NSURLSessionDataTask* task= [self.sessionManger POST:urlString parameters:requestParams progress:^(NSProgress * _Nonnull downloadProgress) {

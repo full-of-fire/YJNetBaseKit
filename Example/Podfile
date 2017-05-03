@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'YJNetBaseKit_Example' do
-  pod 'YJNetBaseKit'
+  pod 'YJNetBaseKit','~>1.0.1'
   target 'YJNetBaseKit_Tests' do
     inherit! :search_paths
 

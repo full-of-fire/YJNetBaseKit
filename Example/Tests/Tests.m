@@ -127,5 +127,26 @@
     
 }
 
+
+- (void)testNetTwo {
+
+    XCTestExpectation *netTest = [self expectationWithDescription:@"测试网络请求失败"];
+    
+    [_testApi loadDataSuccess:^(YJURLResponse *response) {
+       
+        int code = [response.responseObject[@"code"] intValue];
+        XCTAssertEqual(code, 0,@"测试不通过");
+        [netTest fulfill];
+        
+    } fail:^(YJURLResponse *response) {
+        
+    }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError * _Nullable error) {
+       
+        
+    }];
+}
+
 @end
 
